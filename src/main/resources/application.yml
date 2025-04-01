@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: JWT-Security
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt-security
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 60000
+    username: myuser
+    password: mypassword
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+
+
